@@ -1,84 +1,79 @@
-:root {
-  --ion-color-white: #2e2929;
-  --ion-color-white-rgb: 255, 255, 255;
-  --ion-color-white-contrast: #ffffff;
-  --ion-color-white-contrast-rgb: 0, 0, 0;
-  --ion-color-white-shade: #e0e0e0;
-  --ion-color-white-tint: #ffffff;
-}
-.ion-color-white {
-  --ion-color-base: #2a2727;
-  --ion-color-base-rgb: #2e2929;
-  --ion-color-contrast: #2a2929;
-  --ion-color-contrast-rgb: #2e2929;
-  --ion-color-shade: #2e2929;
-  --ion-color-tint: #2e2929;
+.img-responsive {
+  width: 200px;
+  height: 115px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
-.Logo {
+ion-content {
+  position: relative;
+}
+
+.container {
   position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 10;
-  text-align: center;
-}
-.matricula {
-  display: inline-block;
-  position: relative;
-  height: 60;
-  position: relative;
-  padding-bottom: 0px;
-  top: 110px;
-  top: 100px;
-  left: 20%;
+  top: 40%;
+  right: 50%;
+  transform: translateY(-40%) translateX(50%);
+  max-height: 500px;
 }
 
-.form-login {
-  position: relative;
-  align-content: center;
-  vertical-align: middle;
-  width: 250px;
-  padding-left: 5%;
-}
-
-.senha {
-  left: 10%;
-  display: inline-block;
-  position: relative;
-  padding-bottom: 0px;
-  top: 118px;
-  left: 20%;
-}
-.login {
-  display: inline-block;
-  position: relative;
-  padding-bottom: 0%;
-  top: 150px;
-  padding-left: 30%;
-}
-
-.lembrar {
-  align-content: center;
-  margin-top: auto;
-  margin-left: auto;
-  position: relative;
-  padding-bottom: 0%;
-  top: 145px;
-  border-radius: 50;
-  height: 50px;
-  top: 130px;
-  left: 45px;
-  color: #ffffff;
+.inputs {
+  width: 280px;
+  margin: auto;
 }
 
 .textocheck {
-  position: relative;
-  align-content: center;
   padding-left: 10px;
+  color: #666;
 }
-.esquecisenha {
-  position: relative;
-  align-content: center;
-  padding-left: 10px;
-  top: 165px;
+
+.login {
+  width: 130px;
+}
+
+
+@media screen and (max-width: 319px){
+  .img-responsive {
+    width: 110px;
+    height: 70px;
+    margin-bottom: 0px;
+  }
+
+  .inputs {
+    width: 200px;
+    margin: auto;
+  }
+
+  .login {
+    width: 100px;
+  }
+}
+
+
+@media screen and (min-width: 500px) and (min-height: 740px) {
+  .img-responsive {
+    width: 380px;
+    height: 210px;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    max-height: 1000px;
+  }
+
+  .inputs {
+    width: 400px;
+    margin: auto;
+  }
+
+  .login {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .lembrar {
+    margin-top: 20px;
+  }
 }

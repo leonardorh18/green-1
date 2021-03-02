@@ -42,11 +42,6 @@ const routes: Routes = [
     loadChildren: () => import("./ru/ru.module").then((m) => m.RuPageModule),
   },
   {
-    path: "info-uffs",
-    loadChildren: () =>
-      import("./info-uffs/info-uffs.module").then((m) => m.InfoUffsPageModule),
-  },
-  {
     path: "configuracao",
     loadChildren: () =>
       import("./configuracao/configuracao.module").then(
@@ -65,6 +60,18 @@ const routes: Routes = [
     loadChildren: () =>
       import("./login/login.module").then((m) => m.LoginPageModule),
   },
+  {
+    path: 'calendario',
+    loadChildren: () => import('./calendario/calendario.module').then( m => m.CalendarioPageModule)
+  },  {
+    path: 'codigobarra',
+    loadChildren: () => import('./codigobarra/codigobarra.module').then( m => m.CodigobarraPageModule)
+  },
+  {
+    path: 'cardapio',
+    loadChildren: () => import('./cardapio/cardapio.module').then( m => m.CardapioPageModule)
+  },
+
 ];
 
 @NgModule({

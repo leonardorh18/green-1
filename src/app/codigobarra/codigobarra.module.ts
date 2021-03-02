@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { InfoUffsPageRoutingModule } from './info-uffs-routing.module';
+import { CodigobarraPageRoutingModule } from './codigobarra-routing.module';
 
-import { InfoUffsPage } from './info-uffs.page';
+import { CodigobarraPage } from './codigobarra.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InfoUffsPageRoutingModule
+    CodigobarraPageRoutingModule
   ],
-  declarations: [InfoUffsPage]
+  declarations: [CodigobarraPage]
 })
-export class InfoUffsPageModule {}
+export class CodigobarraPageModule {}
